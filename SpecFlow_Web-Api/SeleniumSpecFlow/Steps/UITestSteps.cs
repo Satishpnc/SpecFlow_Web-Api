@@ -14,7 +14,7 @@ namespace SeleniumSpecFlow.Steps
         public void GivenINavigateToSympli_Coding_ChallengeGitHub()
         {
             //--INFO
-           //Navigate to Web Url in AppSetting.json -- Implemented in DriverFactory
+            //Navigate to Web Url in AppSetting.json -- Implemented in DriverFactory
         }
 
         [Given(@"I navigate to (.*) to raise PR")]

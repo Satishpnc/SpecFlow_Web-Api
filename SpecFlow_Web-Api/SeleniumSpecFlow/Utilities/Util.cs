@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestLibrary.Utilities
 {
-   public class Util
+    public class Util
     {
         //This can be used to Implemet common libs across the framework -- Satish
         public static string RandomString()

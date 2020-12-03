@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using WebDriverManager.DriverConfigs.Impl;
 
 namespace SeleniumSpecFlow.Utilities
@@ -13,8 +11,8 @@ namespace SeleniumSpecFlow.Utilities
 
         public IWebDriver InitializeDriver(BrowserType browser)
         {
-            
-            switch(browser)
+
+            switch (browser)
             {
                 case BrowserType.Chrome:
                     new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
@@ -32,6 +30,6 @@ namespace SeleniumSpecFlow.Utilities
             return WebDriver;
         }
 
-       
+
     }
 }

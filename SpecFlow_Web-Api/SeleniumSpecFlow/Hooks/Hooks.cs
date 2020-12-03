@@ -15,7 +15,7 @@ namespace SeleniumSpecFlow
     [Binding]
     public sealed class Hooks : ObjectFactory
     {
-       
+
         public static IWebDriver Driver { get; private set; }
         public static RestClient restClient { get; private set; }
 
@@ -60,7 +60,7 @@ namespace SeleniumSpecFlow
         [BeforeScenario("api")]
         public void BeforeScenarioApi(ScenarioContext scenarioContext)
         {
-             restClient = new RestClient(Config.ApiUrl);
+            restClient = new RestClient(Config.ApiUrl);
             _scenario = _feature.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);
             _scenario.AssignCategory(scenarioContext.ScenarioInfo.Tags);
         }

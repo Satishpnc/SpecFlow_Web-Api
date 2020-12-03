@@ -98,7 +98,7 @@ namespace TestLibrary.Features.APIFeature
             argumentsOfScenario.Add("Status", status);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get list of pull requests which has more than count 1", null, tagsOfScenario, argumentsOfScenario);
 #line 5
- this.ScenarioInitialize(scenarioInfo);
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);

@@ -13,7 +13,7 @@ namespace TestLibrary.Steps
     {
         public IRestResponse restResponse { get; private set; }
 
-      
+
         [Given(@"I create request body for endpoint")]
         public void GivenICreateRequestBodyForEndpoint()
         {
@@ -22,12 +22,12 @@ namespace TestLibrary.Steps
         [When(@"I requested ""(.*)"" for ""(.*)""")]
         public void WhenIRequestedFor(string method, string endPoint)
         {
-            restResponse = ApiHelper.CreateRequest(CreateUser, method, Hooks.restClient, endPoint);
+            restResponse = ApiHelper.CreateRequest(PayLoad, method, Hooks.restClient, endPoint);
         }
         [When(@"I requested ""(.*)"" for (.*) and (.*) to list pull requests")]
         public void WhenIRequestedForaEndPoint(string method, string paramOne, string paramTwo)
         {
-            restResponse = ApiHelper.CreateRequest(CreateUser, method, Hooks.restClient, "/repos/"+ paramOne + "/"+ paramTwo + "/pulls");
+            restResponse = ApiHelper.CreateRequest(PayLoad, method, Hooks.restClient, "/repos/" + paramOne + "/" + paramTwo + "/pulls");
         }
 
         [Then(@"I should see the status of pull request list (.*)")]
@@ -37,7 +37,7 @@ namespace TestLibrary.Steps
             Assert.AreEqual(status, Status, "Status code is not " + status);
         }
 
-       [Then(@"I should see the (.*)")]
+        [Then(@"I should see the (.*)")]
         public void ThenIValidateResponseStatusShouldBe(int status)
         {
             int StatusCode = (int)restResponse.StatusCode;

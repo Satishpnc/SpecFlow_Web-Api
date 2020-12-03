@@ -107,7 +107,7 @@ namespace TestLibrary.Features.WebFeatures
             argumentsOfScenario.Add("message", message);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate there should be different source and target branch(s) while raising PR", null, tagsOfScenario, argumentsOfScenario);
 #line 8
- this.ScenarioInitialize(scenarioInfo);
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -164,8 +164,8 @@ this.FeatureBackground();
             argumentsOfScenario.Add("message", message);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate there should have different commits in source and target while raising P" +
                     "R", null, tagsOfScenario, argumentsOfScenario);
-#line 19
- this.ScenarioInitialize(scenarioInfo);
+#line 20
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -187,13 +187,13 @@ this.FeatureBackground();
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 20
+#line 21
  testRunner.Given(string.Format("I navigate to {0} to raise PR", repo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 21
+#line 22
  testRunner.When(string.Format("I raise new pull request of {0} and {1}", source_Branch, target_Branch), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 23
  testRunner.Then(string.Format("I should able to see the {0}", message), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -221,8 +221,8 @@ this.FeatureBackground();
             argumentsOfScenario.Add("message", message);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate duplicate PR prompts interactive message and user can able to see it wit" +
                     "h a click", null, tagsOfScenario, argumentsOfScenario);
-#line 29
- this.ScenarioInitialize(scenarioInfo);
+#line 31
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -244,16 +244,16 @@ this.FeatureBackground();
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 30
+#line 32
  testRunner.Given(string.Format("I navigate to {0} to raise PR", repo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 31
+#line 33
  testRunner.When(string.Format("I raise new pull request of {0} and {1}", source_Branch, target_Branch), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 32
+#line 34
  testRunner.Then(string.Format("I should able to see the {0}", message), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 33
+#line 35
  testRunner.And("I should see the pull request raised by clicking \'View pull request\' button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -280,8 +280,8 @@ this.FeatureBackground();
             argumentsOfScenario.Add("target_branch", target_Branch);
             argumentsOfScenario.Add("message", message);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate PR can\'t be raised for empty repo", null, tagsOfScenario, argumentsOfScenario);
-#line 39
- this.ScenarioInitialize(scenarioInfo);
+#line 42
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -303,13 +303,13 @@ this.FeatureBackground();
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 40
+#line 43
  testRunner.Given(string.Format("I navigate to {0} to raise PR", repo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 41
+#line 44
  testRunner.When(string.Format("I raise new pull request of {0} and {1}", source_Branch, target_Branch), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 42
+#line 45
  testRunner.Then(string.Format("I should able to see the {0}", message), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
